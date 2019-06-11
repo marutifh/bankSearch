@@ -14,3 +14,81 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$brand-primary: map-get($colors, primary) !default;
+$faint-black: rgba(0, 0, 0, 0.12);
+
+.w-full{
+    max-width: 100% !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-b-t {
+  border-top-width: 0 !important;
+}
+
+.no-border {
+  border-color: transparent !important;
+  border-width: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important
+}
+
+.m-b {
+  margin-bottom: 16px !important;
+}
+.m-b-sml {
+  margin-bottom: 12px !important;
+}
+
+// // Search bar icon change
+.searchbar-ios .searchbar-search-icon {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+//   background-image: url("../assets/imgs/ic-search-black.png");
+  width: 15px;
+  height: 14px;
+  background-size: 15px;
+}
+
+// GLOBAL SEARCH BAR
+.search-bar-content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.26);
+
+  .searchbar-scroller {
+    overflow-y: scroll;
+    max-height: calc(100vh - 160px);
+    position: relative;
+    height: auto;
+  }
+}
+
+// items with lines
+.items-lines .item .item-inner {
+  border-bottom: 1px solid $faint-black !important;
+}
+
+.items-lines .item:last-child .item-inner {
+  border-bottom: 1px solid $faint-black !important;
+}
+
+.items-lines .item.input-has-focus .item-inner {
+  border-bottom: 1px solid $brand-primary !important;
+}
+
+.items-lines .item.input-has-focus:last-child {
+  border-bottom-color: transparent !important;
+}
+
+.items-lines .item:last-child {
+  border-bottom: 0px solid $faint-black !important;
+}

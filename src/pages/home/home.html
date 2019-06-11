@@ -1,14 +1,38 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      {{'BANK_SEARCH' | translate}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-item class="no-margin no-b-t">
+    <ion-label floating>{{'SELECT_CITY' | translate }}</ion-label>
+    <ion-select name="select" (ionChange)="selectChanged($event)" [(ngModel)]="selectedCity">
+      <ion-option *ngFor="let city of cities; let i = index" [value]="city">
+        {{city.name }}
+      </ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item class="m-b-sml no-b-t">
+    <ion-searchbar (ionInput)="searchQuery()" [(ngModel)]="searchCriteria" class="no-border no-padding"
+      [placeholder]="'SEARCH' | translate"></ion-searchbar>
+  </ion-item>
+
+  <ion-list [virtualScroll]="bankDetails">
+    <ion-card *virtualItem="let bank">
+      <ion-card-content class="no-padding-b">
+        <h6 class="text-base text-black roman vertical-center m-t-smd">
+          {{'BANK_NAME'|translate}}: {{bank.bank_name}}
+        </h6>
+        <h6 class="text-base text-black roman vertical-center m-t-smd">
+          {{'BRANCH'|translate}}: {{bank.branch}}
+        </h6>
+        <h6 class="text-base text-black roman vertical-center m-t-smd">
+          {{'IFSC'|translate}}: {{bank.ifsc}}
+        </h6>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

@@ -12,7 +12,7 @@ $font-path: "../assets/fonts";
 $app-direction: ltr;
 
 
-@import "ionic.globals";
+// @import "ionic.globals";
 
 
 // Shared Variables
@@ -86,3 +86,100 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$colors: (primary: #3a83ff, secondary: #40c956, danger: #f22b43, light: #f4f4f4, dark: #000, favorite: #69BB7B, excellent: #f5a623, good: #40c956, fair: #32A949, poor: #f5a623, bad: #f22b43, info: #5bc0de, light-text: rgba(0, 0, 0, 0.37), lighter: rgba(0, 0, 0, 0.12), accent: #7e57c2, light-dark: #475069,
+  grey-white: #F9F9F9,
+  grey-light: #C9C9C9,
+  grey: #DEDEDE,
+  grey-dark: #5B5B5B,
+  grey-dark-very: #838383,
+  grey-bluish: #3F5765);
+
+$app-direction: multi;
+
+$text-color: #5B5B5B !default;
+$font-size-base: 14px !default;
+$h1-font-size: 2.1rem !default;
+$font-family-base: "Avenir-Regular" !default;
+$background-color: #ECF0F1;
+$list-background-color: #FFF;
+$toolbar-background: map-get($colors, primary) !default;
+$toolbar-border-color: #dddee0;
+$toolbar-text-color: #FFFFFF;
+$toolbar-active-color: #FFFFFF;
+$toolbar-inactive-color: #F8F8F8;
+$tabbar-background: #FFFFFF !default;
+$tabbar-ios-background: #FFFFFF !default;
+$toolbar-ios-active-color: map-get($colors, primary) !default;
+$tabs-ios-tab-icon-color-active: $toolbar-background !default;
+$tabs-ios-tab-icon-color: #ccc !default;
+$segment-button-ios-border-radius: 0;
+$button-ios-round-border-radius: 5px !default;
+$button-ios-height: 32px !default;
+$content-ios-has-views-background: #ECF0F1 !default;
+$segment-button-ios-font-size: 14px !default;
+$segment-button-ios-background-color: #fff;
+$segment-button-ios-background-color-activated: #fff;
+$segment-button-ios-text-color: rgb(0, 0, 0);
+$segment-button-ios-opacity-hover: 1 !default;
+$segment-button-ios-opacity-active: 1 !default;
+$tabbar-ios-height: 60px !default;
+$card-ios-margin-top: 10px !default;
+$card-ios-margin-right: 10px !default;
+$card-ios-margin-bottom: 10px !default;
+$card-ios-margin-left: 10px !default;
+$card-ios-padding-top: 20px !default;
+$card-ios-padding-right: 20px !default;
+$card-ios-padding-bottom: 20px !default;
+$card-ios-padding-left: 20px !default;
+$card-ios-font-size: 1.3rem !default;
+$card-ios-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02),
+0 4px 6px 0 rgba(0, 0, 0, 0.04) !default;
+$success-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04),
+0 5px 12px 0 rgba(102, 185, 133, 0.15);
+$card-ios-border-radius: 5px !default;
+$item-ios-body-text-font-size: 1.3rem !default;
+$item-ios-paragraph-text-color: #000;
+$item-ios-avatar-size: auto !default;
+$item-ios-detail-push-color: #000;
+$list-ios-activated-background-color: #ECF0F1;
+$button-ios-margin-top: 0 !default;
+$button-ios-margin-end: 0 !default;
+$button-ios-margin-bottom: 0 !default;
+$button-ios-margin-start: 0 !default;
+$button-ios-border-radius: 5px !default;
+$button-ios-font-size: 14px !default;
+$toolbar-ios-button-font-size: 15px !default;
+$toolbar-ios-title-font-size: 20px !default;
+$toolbar-ios-padding: 8px 0 !default;
+$label-ios-text-color: rgba(0, 0, 0, 0.37) !default;
+$searchbar-ios-background-color: #FFFFFF !default;
+$searchbar-ios-border-color: #DEDEDE !default;
+$searchbar-ios-min-height: 40px !default;
+$searchbar-ios-padding-left-right: 10px !default;
+$searchbar-ios-padding-top-bottom: 10px !default;
+$searchbar-ios-input-height: 4rem !default;
+$badge-font-size: 1rem !default;
+$popover-ios-width: auto !default;
+//Checkbox Customization
+$checkbox-ios-icon-border-radius: 5px;
+$checkbox-ios-icon-checkmark-width: 2px;
+$checkbox-ios-icon-border-width: 2px !default;
+$checkbox-ios-icon-border-color-off: #000 !default;
+// Searchbar
+$searchbar-ios-input-background-color: rgba(0, 0, 0, 0.06) !default;
+$searchbar-ios-border-color: #fff !default;
+$tabs-ios-border: transparent !default;
+// blue outline border for text-box
+$text-input-ios-show-focus-highlight: map-get($colors, primary);
+// $text-input-highlight-color-valid: map-get($colors, lighter);
+$text-input-placeholder-color: map-get($colors, light-text);
+$label-ios-text-color-focused: map-get($colors, primary);
+//Range Knob
+$range-ios-knob-background-color: $toolbar-background;
+$range-ios-bar-height: 2px !default;
+$range-ios-slider-height: 25px !default;
+$range-ios-hit-width: 25px !default;
+
+// POPOVER
+$popover-ios-arrow-background: #fff !default;
